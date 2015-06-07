@@ -18,30 +18,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="upper left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqJ-a9-1z8">
-                                <rect key="frame" x="16" y="20" width="74" height="21"/>
+                                <rect key="frame" x="16" y="20" width="73.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="upper right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNp-RQ-mZj">
-                                <rect key="frame" x="500" y="28" width="84" height="21"/>
+                                <rect key="frame" x="500" y="28" width="84" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bottom left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oA0-Q4-PWA">
-                                <rect key="frame" x="16" y="559" width="84" height="21"/>
+                                <rect key="frame" x="16" y="559.5" width="84" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bottom right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKx-VD-a29">
-                                <rect key="frame" x="489" y="559" width="95" height="21"/>
+                                <rect key="frame" x="489.5" y="559.5" width="94.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pej-Mc-U1k">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pej-Mc-U1k">
                                 <rect key="frame" x="150" y="150" width="300" height="253"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zcq-00-lxn">
@@ -135,12 +135,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="kqJ-a9-1z8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4mN-I4-cCP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Pej-Mc-U1k" secondAttribute="trailing" constant="20" id="Dl1-nZ-tQc"/>
                             <constraint firstItem="oA0-Q4-PWA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Gi9-8a-aC6"/>
                             <constraint firstItem="jNp-RQ-mZj" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Htk-1l-8fC"/>
                             <constraint firstAttribute="bottomMargin" secondItem="rKx-VD-a29" secondAttribute="bottom" constant="20" id="K1B-WP-svy"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Pej-Mc-U1k" secondAttribute="bottom" constant="30" id="ZHx-7r-fbp"/>
+                            <constraint firstAttribute="centerY" secondItem="Pej-Mc-U1k" secondAttribute="centerY" constant="23.5" id="bSH-8Z-sjD"/>
                             <constraint firstItem="kqJ-a9-1z8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="hBE-D2-8jh"/>
+                            <constraint firstItem="Pej-Mc-U1k" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="jHb-zv-UUr"/>
                             <constraint firstAttribute="bottomMargin" secondItem="oA0-Q4-PWA" secondAttribute="bottom" constant="20" id="oJI-IH-YTq"/>
                             <constraint firstItem="rKx-VD-a29" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ohl-sC-WV2"/>
+                            <constraint firstItem="Pej-Mc-U1k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="vov-09-tDx"/>
                             <constraint firstItem="jNp-RQ-mZj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="28" id="wk3-ak-vFw"/>
                         </constraints>
                     </view>
